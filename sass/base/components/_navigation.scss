@@ -2,30 +2,28 @@
   border-top: 5px solid map-get($colors, 'accent');
 }
 .main-nav {
-  padding: 0px 15px 0 15px;
   display: flex;
   align-items: center;
 
   border-bottom: 1px solid map-get($colors, 'accent');
+}
+.site-nav {
+  display: flex;
+  margin-left: auto;
 
-  .site-nav {
-    display: flex;
-    margin-left: auto;
+  .site-nav__item {
+    margin: 30px 0 20px;
+  }
 
-    .site-nav__item {
-      margin: 30px 0 20px;
-    }
+  .site-nav__link {
+    color: map-get($colors, 'black');
+    padding: 30px 25px 17px 25px;
+  }
 
-    .site-nav__link {
-      color: map-get($colors, 'black');
-      padding: 30px 25px 17px 25px;
-    }
-
-    .site-nav__link:hover,
-    .site-nav__link:focus {
-      background-color: map-get($colors, 'accent');
-      color: map-get($colors, 'white');
-    }
+  .site-nav__link:hover,
+  .site-nav__link:focus {
+    background-color: map-get($colors, 'accent');
+    color: map-get($colors, 'white');
   }
 }
 

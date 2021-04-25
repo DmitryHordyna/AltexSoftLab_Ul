@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+  margin-top: 50px;
+
+  border-bottom: 1px solid rgb(112, 107, 107);
+  .hero_img {
+    display: flex;
+    max-width: 920px;
+    height: 350px;
+    background-color: rgb(112, 107, 107);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  .hero-title {
+    margin-bottom: 40px;
+  }
+}
+.hero_box {
+  position: absolute;
+  bottom: 110px;
+  right: 60px;
+  width: 300px;
+
+  .hero-box_title {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colors, 'accent');
+    color: map-get($colors, 'white');
+    margin-bottom: 20px;
+  }
+  .hero-box_description {
+    background-color: map-get($colors, 'white');
+    padding-left: 15px;
+  }
+}
+
+.hero-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 0 50px;
+
+  .hero-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px;
+  }
+  .hero-button:not(:last-child) {
+    margin-right: 10px;
+  }
+  .hero-button:hover,
+  .hero-button:focus {
+    border: 4px solid map-get($colors, 'accent');
+    background-color: map-get($colors, 'white');
+  }
+}
+
+.btn-left {
+  position: absolute;
+  top: 265px;
+  left: 30px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid map-get($colors, 'accent');
+  background-color: black;
+  border-radius: 50%;
+}
+.btn-right {
+  position: absolute;
+  top: 265px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid map-get($colors, 'accent');
+  background-color: black;
+  border-radius: 50%;
+}
