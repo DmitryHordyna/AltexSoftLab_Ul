@@ -9,7 +9,8 @@
         "../sass/base/components/_hero.scss",
         "../sass/base/components/_about.scss",
         "../sass/base/components/_services.scss",
-        "../sass/base/components/_review.scss"
+        "../sass/base/components/_review.scss",
+        "../sass/base/components/_contact.scss"
     ],
     "names": [],
     "file": "main.min.css"
