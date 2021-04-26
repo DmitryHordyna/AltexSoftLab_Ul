@@ -1,0 +1,10 @@
+.down {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid map-get($colors, 'gray');
+  display: flex;
+  justify-content: space-between;
+  .text {
+    color: map-get($colors, 'grey');
+  }
+}

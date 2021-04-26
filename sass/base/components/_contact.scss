@@ -1,0 +1,42 @@
+.contact-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid map-get($colors, 'gray');
+  color: map-get($colors, 'white');
+}
+.contact-list {
+  margin-bottom: 10px;
+
+  .item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .link {
+    color: map-get($colors, 'footerText');
+  }
+}
+.tel-footer {
+  display: grid;
+  margin-bottom: 10px;
+  .link {
+    color: map-get($colors, 'footerText');
+  }
+  .link:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  .span {
+    color: map-get($colors, 'accent');
+  }
+}
+.time-list {
+  .title {
+    margin-bottom: 3px;
+    color: map-get($colors, 'footerText');
+  }
+  .text {
+    color: map-get($colors, 'footerText');
+  }
+  .text:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}

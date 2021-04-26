@@ -355,6 +355,7 @@ html {
 
 body {
   color: var(--color-nav-email);
+  background-color: #706b6b;
   font-family: 'Saira Condensed', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -389,7 +390,8 @@ svg {
 .container {
   max-width: 950px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 30px 15px 0;
+  background-color: white;
 }
 
 .card-set {
@@ -410,7 +412,7 @@ svg {
 }
 
 .footer {
-  padding: 30px 0;
+  padding: 30px 15px;
   background-color: #706b6b;
 }
 
@@ -482,6 +484,10 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: white;
   border-bottom: 1px solid #6bb143;
 }
 
@@ -514,8 +520,7 @@ svg {
 
 .hero {
   position: relative;
-  margin-top: 50px;
-  border-bottom: 1px solid #706b6b;
+  padding-top: 50px;
 }
 
 .hero .hero_img {
@@ -577,7 +582,8 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0 30px;
+  padding: 20px 0 30px;
+  border-bottom: 1px solid #706b6b;
 }
 
 .hero-btn-box .hero-button {
@@ -714,5 +720,201 @@ svg {
 
 .review-span {
   font-weight: normal;
+}
+
+.contact-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.contact-list {
+  margin-bottom: 10px;
+}
+
+.contact-list .item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.contact-list .link {
+  color: #d3cccc;
+}
+
+.tel-footer {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 10px;
+}
+
+.tel-footer .link {
+  color: #d3cccc;
+}
+
+.tel-footer .link:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.tel-footer .span {
+  color: #6bb143;
+}
+
+.time-list .title {
+  margin-bottom: 3px;
+  color: #d3cccc;
+}
+
+.time-list .text {
+  color: #d3cccc;
+}
+
+.time-list .text:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.social-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.social-list .item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 1px solid gray;
+}
+
+.social-list .item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.social-list .link {
+  color: #6bb143;
+}
+
+.blog-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.blog-list .item .title {
+  color: #d3cccc;
+  margin-bottom: 4px;
+}
+
+.blog-list .item .text {
+  color: #d3cccc;
+  margin-bottom: 4px;
+}
+
+.blog-list .item .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 5px;
+  color: #6bb143;
+}
+
+.blog-list .item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.form .input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 1px solid rgba(88, 88, 92, 0.692);
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  background-color: rgba(88, 88, 92, 0.692);
+}
+
+.form .input::-webkit-input-placeholder {
+  color: white;
+}
+
+.form .input:-ms-input-placeholder {
+  color: white;
+}
+
+.form .input::-ms-input-placeholder {
+  color: white;
+}
+
+.form .input::placeholder {
+  color: white;
+}
+
+.form .texteria {
+  resize: none;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solidrgba(88, 88, 92, 0.692);
+  color: white;
+  background-color: rgba(88, 88, 92, 0.692);
+}
+
+.form .texteria::-webkit-input-placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+.form .texteria:-ms-input-placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+.form .texteria::-ms-input-placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+.form .texteria::placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+.form .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6bb143;
+  color: black;
+  cursor: pointer;
+}
+
+.form-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.down {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

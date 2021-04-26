@@ -1,0 +1,27 @@
+.blog-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid map-get($colors, 'gray');
+  color: map-get($colors, 'white');
+}
+.blog-list {
+  .item {
+    .title {
+      color: map-get($colors, 'footerText');
+      margin-bottom: 4px;
+    }
+    .text {
+      color: map-get($colors, 'footerText');
+      margin-bottom: 4px;
+    }
+    .link {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5px;
+      color: map-get($colors, 'accent');
+    }
+  }
+  .item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

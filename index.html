@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="container main-nav">
+      <nav class="main-nav">
         <a href="#" class="link logo"
           >Clearcut <br /><span class="logo-span"
             >Free PSD Website Template</span
@@ -201,8 +201,8 @@
       <footer class="footer container">
         <div class="footer-set">
           <article class="footer-article contact">
-            <h4 class="title">Company Details</h4>
-            <ul class="list list-footer">
+            <h4 class="title contact-title">Company Details</h4>
+            <ul class="list contact-list">
               <li class="item"><a href="#" class="link">Company Name</a></li>
               <li class="item">
                 <a href="#" class="link">Street Name & Number</a>
@@ -211,44 +211,42 @@
               <li class="item"><a href="#" class="link">Postcode/Zip</a></li>
             </ul>
 
-            <address class="list-footer">
+            <address class="tel-footer">
               <a href="tel:XXXX XXXXXXX" class="link">Tel: XXXX XXXXXXX</a>
               <a href="faxto:" class="link">Fax:XXXX XXXXXXX</a>
-              <a href="mailto:" class="link">Email: contact@mydoman.com</a>
+              <a href="mailto:" class="link"
+                >Email: <span class="span">contact@mydoman.com</span>
+              </a>
             </address>
 
-            <div class="list-footer">
-              <h5 class="title">Office Hours</h5>
-              <p class="text">Monday - Fridat: 08:00 - 17:30</p>
-              <p class="text">Saturday: 08:00 - 13:00</p>
-            </div>
+            <ul class="list time-list">
+              <li class="item">
+                <h5 class="title">Office Hours</h5>
+                <p class="text">Monday - Fridat: 08:00 - 17:30</p>
+                <p class="text">Saturday: 08:00 - 13:00</p>
+              </li>
+            </ul>
           </article>
 
-          <article class="footer-article">
-            <h4 class="title">Stay Social</h4>
-            <ul class="list">
+          <article class="footer-article social">
+            <h4 class="title social-title">Stay Social</h4>
+            <ul class="list social-list">
               <li class="item">
                 <a href="#" class="link"
                   ><img src="#" alt="" class="img" />Get linked up in
                   Linkedun</a
                 >
               </li>
-            </ul>
-            <ul class="list">
               <li class="item">
                 <a href="#" class="link"
                   ><img src="#" alt="" class="img" />Keep up with our Treets</a
                 >
               </li>
-            </ul>
-            <ul class="list">
               <li class="item">
                 <a href="#" class="link"
                   ><img src="#" alt="" class="img" />Photos on Pinterest</a
                 >
               </li>
-            </ul>
-            <ul class="list">
               <li class="item">
                 <a href="#" class="link"
                   ><img src="#" alt="" class="img" />RSS Feed</a
@@ -257,49 +255,65 @@
             </ul>
           </article>
 
-          <article class="footer-article">
-            <h4 class="title">From The Blog</h4>
-            <ul class="list">
+          <article class="footer-article blog">
+            <h4 class="title blog-title">From The Blog</h4>
+            <ul class="list blog-list">
               <li class="item">
-                <h5 class="title">Blog Post Title</h5>
+                <h4 class="title">Blog Post Title</h4>
+                <p class="text">Posted by Admin on 00.00.0000</p>
                 <p class="text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   sunt aliquid ab quisquam magnam at inventore.
                 </p>
-                <a class="btn">Read More</a>
+                <a class="link">Read More</a>
               </li>
-            </ul>
-            <ul class="list">
               <li class="item">
                 <h5 class="title">Blog Post Title</h5>
+                <p class="text">Posted by Admin on 00.00.0000</p>
                 <p class="text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   sunt aliquid ab quisquam magnam at inventore.
                 </p>
-                <a class="btn">Read More</a>
+                <a class="link">Read More</a>
               </li>
             </ul>
           </article>
 
-          <article class="footer-article">
-            <h4 class="title">Contact Us</h4>
-            <form action="submit">
-              <input type="text" name="" id="" />
-              <input type="text" name="" id="" />
-              <textarea
-                class="texteria"
+          <article class="footer-article form">
+            <h4 class="title form-title">Contact Us</h4>
+            <form
+              class="signup_form"
+              name="signup_form"
+              autocomplete="on"
+              novalidate
+            >
+              <input
+                class="input"
+                type="name"
                 name=""
                 id=""
-                cols="30"
+                placeholder="Name"
+              />
+              <input
+                class="input"
+                type="email"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+              <textarea
+                class="texteria"
+                name="feedback"
                 rows="10"
+                placeholder="Message"
               ></textarea>
               <button type="submit" class="button">SUBMIT</button>
             </form>
           </article>
         </div>
-        <div>
-          <p>Copyringt 2021 Demain Name - All Right Reserved</p>
-          <p>Pemplates by OS Templates</p>
+        <div class="down">
+          <p class="text">Copyringt 2021 Demain Name - All Right Reserved</p>
+          <p class="text">Pemplates by OS Templates</p>
         </div>
       </footer>
     </main>
