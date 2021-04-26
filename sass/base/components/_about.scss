@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  .about-title {
+    margin-bottom: 15px;
+  }
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    width: 276px;
+    height: 146px;
+    padding: -5px;
+
+    font-size: 20px;
+    color: white;
+    background-color: rgb(112, 107, 107);
+    border: 3px solid white;
+    outline: 1px solid black;
+  }
+  .about-text {
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+}
+.link-more {
+  display: flex;
+  justify-content: flex-end;
+  color: map-get($colors, 'accent');
+}

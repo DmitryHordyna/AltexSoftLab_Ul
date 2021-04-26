@@ -1,0 +1,27 @@
+.services {
+  .services-title {
+    margin-bottom: 15px;
+  }
+  .services_list {
+    .services_item {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .services_title_secong {
+      margin-bottom: 5px;
+    }
+  }
+}
+.services_img {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  min-width: 64px;
+  height: 64px;
+  font-size: 14px;
+
+  background-color: rgb(112, 107, 107);
+  color: white;
+}

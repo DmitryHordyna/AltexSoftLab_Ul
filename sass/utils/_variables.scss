@@ -69,23 +69,43 @@ svg {
 }
 
 // all-class-style
+
 .container {
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 950px;
+  margin: 0 auto;
+
   padding: 0 15px;
 }
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: -15px;
+}
+.section {
+  flex-basis: calc(100% / 3 - 15px);
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: rgb(112, 107, 107);
+}
+.footer-set {
+  display: flex;
+  flex-wrap: wrap;
+
   margin-left: -10px;
   margin-top: -10px;
 }
-.section {
-  flex-basis: calc(100% / 3 - 10px);
+.footer-article {
+  flex-basis: calc(100% / 4 - 10px);
   margin-left: 10px;
   margin-top: 10px;
-  outline: 1px solid red;
+}
+.texteria {
+  font-size: revert;
 }
 
 //   @media screen and (min-width: 480px) {
