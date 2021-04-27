@@ -19,12 +19,13 @@
     <header class="header">
       <nav class="main-nav">
         <a href="#" class="link logo"
-          >Clearcut <br /><span class="logo-span"
-            >Free PSD Website Template</span
-          ></a
+          ><span class="logo-span"
+            >Clearcut </span
+          ><br />Free PSD Website Template</a
         >
 
         <ul class="list site-nav">
+           <li class="item site-nav__item">
           <li class="item site-nav__item">
             <a href="" class="link site-nav__link">HOME</a>
           </li>
@@ -50,8 +51,8 @@
     <main class="main">
       <section class="hero container">
         <h1 class="title hero-title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-          voluptatum, ipsam id possimus ut distinctio?
+          &#8220Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          voluptatum, ipsam id possimus ut distinctio?&#8222;
         </h1>
         <div class="hero_img">920 X 350</div>
 
@@ -60,20 +61,24 @@
             <span>This Is A Very Long Slider Title</span>
           </h2>
           <p class="text hero-box_description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            veritatis eum atque mollitia nisi quaerat animi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
+            veritatis eum atque veritatis eum atque mollitia nisi quaerat animi!
           </p>
         </div>
 
-        <button class="btn-left btn"></button>
-        <button class="btn-right btn"></button>
+        <div class="btn-left btn"><svg class="svg-icon" width="32" height="32">
+                      <use href="./img/svg/arr.svg#icon-circle-l"></use>
+                    </svg></div>
+        <div class="btn-right btn"><svg class="svg-icon" width="32" height="32">
+                      <use href="./img/svg/arr.svg#icon-circle-r"></use>
+                    </svg></div>
 
         <div class="hero-btn-box">
-          <button class="button hero-button"></button>
-          <button class="button hero-button"></button>
-          <button class="button hero-button"></button>
-          <button class="button hero-button"></button>
-          <button class="button hero-button"></button>
+          <div class="button hero-button"></div>
+          <div class="button hero-button"></div>
+          <div class="button hero-button"></div>
+          <div class="button hero-button"></div>
+          <div class="button hero-button"></div>
         </div>
       </section>
 
@@ -95,7 +100,9 @@
               beatae, similiquesimilique obcaecatirerum?
             </p>
 
-            <a href="#" class="link link-more">Read More About Us</a>
+            <a href="#" class="link link-more"
+              >Read More About Us <span class="span"> »</span></a
+            >
           </article>
 
           <article class="section services">
@@ -162,7 +169,9 @@
               </li>
             </ul>
 
-            <a href="#" class="link link-more">Read More About Us</a>
+            <a href="#" class="link link-more"
+              >Read More About Us <span class="span"> »</span></a
+            >
           </article>
 
           <article class="section review">
@@ -179,7 +188,9 @@
                   necessitatibus vero quibusdam cum temporibus sint perspiciatis
                   quae dicta.
                 </p>
-                <a href="#" class="link link-more">View This Project</a>
+                <a href="#" class="link link-more"
+                  >View This Project <span class="span"> »</span></a
+                >
               </li>
 
               <li class="item review_item">
@@ -191,7 +202,9 @@
                   Rerum voluptatem fugit in sunt nam placeat, est necessitatibus
                   vero quibusdam cum temporibus sint perspiciatis quae dicta.
                 </p>
-                <a href="#" class="link link-more">View This Project</a>
+                <a href="#" class="link link-more"
+                  >View This Project <span class="span"> »</span></a
+                >
               </li>
             </ul>
           </article>
@@ -212,8 +225,12 @@
             </ul>
 
             <address class="tel-footer">
-              <a href="tel:XXXX XXXXXXX" class="link">Tel: XXXX XXXXXXX</a>
-              <a href="faxto:" class="link">Fax:XXXX XXXXXXX</a>
+              <a href="tel:XXXX XXXXXXX" class="link"
+                >Tel: <span class="span1">XXXX XXXXXXX</span></a
+              >
+              <a href="faxto:" class="link"
+                >Fax: <span class="span1">XXXX XXXXXXX</span></a
+              >
               <a href="mailto:" class="link"
                 >Email: <span class="span">contact@mydoman.com</span>
               </a>
@@ -233,23 +250,42 @@
             <ul class="list social-list">
               <li class="item">
                 <a href="#" class="link"
-                  ><img src="#" alt="" class="img" />Get linked up in
-                  Linkedun</a
+                  ><div class="icon-box">
+                    <svg class="svg-icon" width="14" height="14">
+                      <use href="./img/svg/symbol.svg#icon-linkedin"></use>
+                    </svg>
+                  </div>
+                  Get linked up in Linkedun</a
                 >
               </li>
               <li class="item">
                 <a href="#" class="link"
-                  ><img src="#" alt="" class="img" />Keep up with our Treets</a
+                  ><div class="icon-box">
+                    <svg class="svg-icon" width="14" height="14">
+                      <use href="./img/svg/symbol.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                  Keep up with our Treets</a
+                >
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="icon-box">
+                    <svg class="svg-icon" width="15" height="15">
+                      <use href="./img/svg/symbol.svg#icon-pinterest"></use>
+                    </svg>
+                  </div>
+                  Photos on Pinterest</a
                 >
               </li>
               <li class="item">
                 <a href="#" class="link"
-                  ><img src="#" alt="" class="img" />Photos on Pinterest</a
-                >
-              </li>
-              <li class="item">
-                <a href="#" class="link"
-                  ><img src="#" alt="" class="img" />RSS Feed</a
+                  ><div class="icon-box">
+                    <svg class="svg-icon" width="12" height="12">
+                      <use href="./img/svg/symbol.svg#icon-rss"></use>
+                    </svg>
+                  </div>
+                  RSS Feed</a
                 >
               </li>
             </ul>
@@ -265,7 +301,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   sunt aliquid ab quisquam magnam at inventore.
                 </p>
-                <a class="link">Read More</a>
+                <a class="link">Read More <span class="span">»</span> </a>
               </li>
               <li class="item">
                 <h5 class="title">Blog Post Title</h5>
@@ -274,7 +310,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   sunt aliquid ab quisquam magnam at inventore.
                 </p>
-                <a class="link">Read More</a>
+                <a class="link">Read More <span class="span"> »</span></a>
               </li>
             </ul>
           </article>
@@ -317,5 +353,6 @@
         </div>
       </footer>
     </main>
+
   </body>
 </html>

@@ -19,6 +19,16 @@
       justify-content: flex-end;
       margin-top: 5px;
       color: map-get($colors, 'accent');
+      cursor: pointer;
+      @extend %transition;
+      & .span {
+        margin-left: 3px;
+      }
+    }
+    .link:hover,
+    .link:focus {
+      @extend %transition;
+      color: map-get($colors, 'white');
     }
   }
   .item:not(:last-child) {

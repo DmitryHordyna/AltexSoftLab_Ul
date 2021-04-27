@@ -17,24 +17,33 @@
   margin-left: auto;
 
   .site-nav__item {
-    margin: 30px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .site-nav__link {
+    @extend %transition;
+    padding: 22px 10px 20px;
     color: map-get($colors, 'black');
-    padding: 30px 25px 18px 25px;
   }
 
-  .site-nav__link:hover,
-  .site-nav__link:focus {
+  .site-nav__item:hover,
+  .site-nav__item:focus {
+    @extend %transition;
+
     background-color: map-get($colors, 'accent');
     color: map-get($colors, 'white');
   }
 }
 
+.logo-span {
+  text-transform: uppercase;
+  font-size: 28px;
+
+  line-height: 1.5;
+}
 .logo {
   color: map-get($colors, 'black');
   font-family: 'Montserrat', sans-serif;
 }
-// .logo-span {
-// }

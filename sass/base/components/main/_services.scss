@@ -11,7 +11,15 @@
       margin-bottom: 5px;
     }
   }
+  .link:hover,
+  .link:focus {
+    color: map-get($colors, 'black');
+  }
+  .span {
+    margin-left: 3px;
+  }
 }
+
 .services_img {
   display: flex;
 
@@ -23,5 +31,5 @@
   font-size: 14px;
 
   background-color: rgb(112, 107, 107);
-  color: white;
+  color: map-get($colors, 'white');
 }

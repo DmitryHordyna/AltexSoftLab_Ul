@@ -1,0 +1,68 @@
+.form {
+  .input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+
+    border: 1px solid map-get($colors, 'backForm');
+    border-radius: 4px;
+    outline: none;
+
+    color: map-get($colors, 'white');
+    background-color: map-get($colors, 'backForm');
+    cursor: pointer;
+  }
+  .input::placeholder {
+    color: map-get($colors, 'white');
+  }
+
+  .input:not(:placeholder-shown) {
+    border-color: map-get($colors, 'accent');
+  }
+  .texteria {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+
+    cursor: pointer;
+    outline: none;
+    border: 1px solid map-get($colors, 'backForm');
+    color: map-get($colors, 'white');
+    background-color: map-get($colors, 'backForm');
+  }
+  .texteria::placeholder {
+    font-size: 15px;
+    color: map-get($colors, 'white');
+  }
+  .texteria:not(:placeholder-shown) {
+    border-color: map-get($colors, 'accent');
+  }
+  .button {
+    display: inline-flex;
+    padding: 8px 22px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: map-get($colors, 'accent');
+    color: map-get($colors, 'black');
+
+    cursor: pointer;
+    @extend %transition;
+  }
+  .button:focus,
+  .button:hover {
+    @extend %transition;
+    color: map-get($colors, 'accent');
+    background-color: map-get($colors, 'white');
+  }
+}
+.form-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid map-get($colors, 'gray');
+  color: map-get($colors, 'white');
+}

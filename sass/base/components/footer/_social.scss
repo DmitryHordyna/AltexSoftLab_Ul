@@ -1,0 +1,54 @@
+.social-title {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid map-get($colors, 'gray');
+  color: map-get($colors, 'white');
+}
+.social-list {
+  .item {
+    flex-grow: 1;
+    border-bottom: 1px solid map-get($colors, 'gray');
+  }
+  .item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .link {
+    color: map-get($colors, 'accent');
+    display: flex;
+    align-items: center;
+    @extend %transition;
+  }
+}
+.icon-box {
+  @extend %flexboxcentre;
+  margin: 7px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: map-get($colors, 'backForm');
+  @extend %transition;
+  & .svg-icon {
+    @extend %transition;
+    fill: map-get($colors, 'white');
+  }
+  // .svg-icon:hover {
+
+  //   fill: map-get($colors, 'accent');
+  // }
+}
+
+.social-list {
+  .link:hover,
+  .link:focus {
+    color: map-get($colors, 'white');
+    @extend %transition;
+    & .icon-box {
+      @extend %transition;
+      background-color: map-get($colors, 'white');
+
+      & .svg-icon {
+        @extend %transition;
+        fill: map-get($colors, 'accent');
+      }
+    }
+  }
+}

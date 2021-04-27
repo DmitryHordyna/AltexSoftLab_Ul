@@ -14,12 +14,30 @@
   .link {
     color: map-get($colors, 'footerText');
   }
+  .link:hover,
+  .link:focus {
+    color: map-get($colors, 'accent');
+  }
 }
 .tel-footer {
   display: grid;
   margin-bottom: 10px;
   .link {
     color: map-get($colors, 'footerText');
+  }
+  .link:hover,
+  .link:focus {
+    color: map-get($colors, 'footerText');
+
+    .span1 {
+      color: map-get($colors, 'accent');
+
+      text-decoration: underline;
+    }
+    .span {
+      color: map-get($colors, 'footerText');
+      text-decoration: underline;
+    }
   }
   .link:not(:last-child) {
     margin-bottom: 3px;

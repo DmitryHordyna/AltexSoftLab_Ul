@@ -3,16 +3,23 @@
   padding-top: 50px;
   .hero_img {
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 920px;
+    margin: 0 auto;
     height: 350px;
     background-color: rgb(112, 107, 107);
     color: white;
-    justify-content: center;
-    align-items: center;
+
     font-size: 40px;
   }
   .hero-title {
-    margin-bottom: 40px;
+    font-style: italic;
+    margin: 0 auto 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .hero_box {
@@ -62,21 +69,32 @@
 
 .btn-left {
   position: absolute;
-  top: 265px;
+  top: 305px;
   left: 30px;
-  width: 45px;
-  height: 45px;
-  border: 2px solid map-get($colors, 'accent');
-  background-color: black;
-  border-radius: 50%;
+  @extend %transition;
+
+  .svg-icon {
+    fill: map-get($colors, 'white');
+  }
+}
+.btn-left:hover {
+  .svg-icon {
+    @extend %transition;
+    fill: map-get($colors, 'accent');
+  }
 }
 .btn-right {
   position: absolute;
-  top: 265px;
+  top: 305px;
   right: 30px;
-  width: 45px;
-  height: 45px;
-  border: 2px solid map-get($colors, 'accent');
-  background-color: black;
-  border-radius: 50%;
+  @extend %transition;
+  .svg-icon {
+    fill: map-get($colors, 'white');
+  }
+}
+.btn-right:hover {
+  .svg-icon {
+    @extend %transition;
+    fill: map-get($colors, 'accent');
+  }
 }

@@ -1,0 +1,33 @@
+.review {
+  .review_name {
+    display: inline-flex;
+    align-items: center;
+  }
+  .review_name::before {
+    content: '';
+    width: 55px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../../img/svg/quote-svgrepo-com.svg');
+  }
+
+  .review_item {
+    margin-top: 10px;
+  }
+
+  .link-more {
+    margin-top: 5px;
+  }
+  .link-more:hover,
+  .link-more:focus {
+    color: map-get($colors, 'black');
+  }
+  .span {
+    margin-left: 3px;
+  }
+}
+
+.review-span {
+  font-weight: normal;
+}
