@@ -6,19 +6,17 @@
 %transition {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link {
-  cursor: pointer;
-}
 
 $colors: (
   'accent': #a7c353,
   'firstText': #434343,
   'secondText': #dedede,
+  'background': #2d2d2d,
+  'footerText': rgb(211, 204, 204),
+  'backForm': rgba(88, 88, 92, 0.692),
   'black': black,
   'white': white,
   'gray': gray,
-  'footerText': rgb(211, 204, 204),
-  'backForm': rgba(88, 88, 92, 0.692),
 );
 
 $fontWeight: (
@@ -51,10 +49,8 @@ html {
 }
 
 body {
-  color: var(--color-nav-email);
-  background-color: rgb(112, 107, 107);
+  background-color: map-get($colors, 'background');
   font-family: 'Saira Condensed', sans-serif;
-  letter-spacing: map-get($letterSpacing, 'more');
 }
 ul {
   list-style: none;
@@ -114,28 +110,57 @@ svg {
   background-color: white;
 }
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -7px;
-  margin-top: 5px;
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-top: -20px;
+  }
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+  }
 }
 
 .section {
-  margin-left: 20px;
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 20px);
+  @media screen and (min-width: 480px) {
+    margin-right: 20px;
+    flex-basis: calc(100% / 2 - 20px);
   }
   @media screen and (max-width: 1199px) {
-    flex-basis: calc(100% / 2 - 15px);
+    margin-top: 20px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 20px;
+    flex-basis: calc(100% / 3 - 20px);
+  }
+  // @media screen and (max-width: 1199px) {
+
+  //   flex-basis: calc(100% / 2 - 15px);
+  // }
 }
 .three-group {
   padding-bottom: 30px;
 }
+.title-group {
+  @media screen and (max-width: 479px) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 23px;
+    font-size: 25px;
+    line-height: 1.21;
+    letter-spacing: 0.05em;
+  }
+}
 .text-group {
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.07em;
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.07em;
+  }
 }
 .link-more {
   font-size: 14px;
@@ -151,28 +176,43 @@ svg {
   font-size: 18px;
   line-height: 1.3;
   letter-spacing: 0.07em;
+
+  @media screen and (max-width: 479px) {
+    margin-top: 15px;
+  }
 }
 .footer-set {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+  }
 
-  margin-right: -20px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-right: -20px;
+    margin-top: -20px;
+  }
 }
 .footer-article {
-  margin-right: 20px;
+  @media screen and (min-width: 480px) {
+    margin-right: 20px;
+    margin-top: 20px;
+    flex-basis: calc(100% / 2 - 20px);
+  }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 20px);
   }
-  @media screen and (max-width: 1199px) {
-    flex-basis: calc(100% / 2 - 15px);
-  }
+  // @media screen and (max-width: 1199px) {
+  //   flex-basis: calc(100% / 2 - 15px);
+  // }
 }
 
 .footer {
   max-width: 1000px;
   padding: 35px 20px 10px;
-  background-color: #2d2d2d;
+  background-color: map-get($colors, 'background');
 }
 
 .texteria {

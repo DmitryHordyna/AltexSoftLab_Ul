@@ -27,11 +27,12 @@
     font-size: 15px;
     line-height: 1.31;
     letter-spacing: 0.057em;
-    color: map-get($colors, 'secondText');
+    color: map-get($colors, 'black');
 
     @extend %transition;
   }
   .li_gallery {
+    @extend %transition;
     padding-right: 12px;
   }
 
@@ -40,7 +41,9 @@
     @extend %transition;
 
     background-color: map-get($colors, 'accent');
-    color: map-get($colors, 'white');
+    .link {
+      color: map-get($colors, 'white');
+    }
   }
 }
 

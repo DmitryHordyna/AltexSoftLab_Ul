@@ -1,19 +1,15 @@
 .about {
   display: flex;
   flex-direction: column;
-  .about-title {
-    margin-bottom: 23px;
-    font-size: 25px;
-    line-height: 1.21;
-    letter-spacing: 0.05em;
-  }
+
   .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 
-    width: 276px;
+    width: 100%;
+    max-width: 276px;
     height: 146px;
     padding: -5px;
 
@@ -22,6 +18,13 @@
     background-color: rgb(112, 107, 107);
     border: 3px solid map-get($colors, 'white');
     outline: 1px solid map-get($colors, 'black');
+
+    @media screen and (max-width: 479px) {
+      margin: 0 auto 15px;
+    }
+    @media screen and (min-width: 480px) {
+      width: 276px;
+    }
   }
   .about-text {
     flex-grow: 1;
@@ -31,6 +34,10 @@
   display: flex;
   justify-content: flex-end;
   color: map-get($colors, 'accent');
+  @media screen and (max-width: 479px) {
+    margin: 15px 0;
+  }
+
   .span {
     margin-left: 3px;
   }
