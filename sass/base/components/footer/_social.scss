@@ -10,7 +10,7 @@
     border-bottom: 1px solid map-get($colors, 'gray');
   }
   .item:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 11px;
   }
   .link {
     color: map-get($colors, 'accent');

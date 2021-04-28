@@ -1,45 +1,68 @@
 .hero {
   position: relative;
-  padding-top: 50px;
+  padding-top: 40px;
+
   .hero_img {
     display: flex;
     justify-content: center;
     align-items: center;
+
     max-width: 920px;
-    margin: 0 auto;
     height: 350px;
+    margin: 0 auto;
+
     background-color: rgb(112, 107, 107);
     color: white;
 
     font-size: 40px;
   }
   .hero-title {
-    font-style: italic;
-    margin: 0 auto 40px;
-    text-align: center;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
+
+    margin: 0 auto 40px;
+    padding: 0 75px;
+
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.31;
+    letter-spacing: 0.07em;
   }
 }
 .hero_box {
   position: absolute;
-  bottom: 110px;
-  right: 60px;
-  width: 300px;
+  bottom: 100px;
+  right: 82px;
+  width: 351px;
 
   .hero-box_title {
+    height: 40px;
+
     display: flex;
-    width: 300px;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 10px;
+
     background-color: map-get($colors, 'accent');
     color: map-get($colors, 'white');
-    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 1.31;
+    letter-spacing: 0.07em;
   }
   .hero-box_description {
+    height: 68px;
+
+    padding: 15px;
+
     background-color: map-get($colors, 'white');
-    padding-left: 15px;
+
+    font-size: 12px;
+    line-height: 1.31;
+    letter-spacing: 0.08em;
   }
 }
 
@@ -48,17 +71,17 @@
   justify-content: center;
   align-items: center;
 
-  padding: 20px 0 30px;
-  border-bottom: 1px solid rgb(112, 107, 107);
+  padding: 20px 0 40px;
+  border-bottom: 1px solid map-get($colors, 'secondText');
 
   .hero-button {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 4px;
   }
   .hero-button:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .hero-button:hover,
   .hero-button:focus {
@@ -69,32 +92,34 @@
 
 .btn-left {
   position: absolute;
-  top: 305px;
-  left: 30px;
+  top: 279px;
+  left: 31px;
+
   @extend %transition;
 
   .svg-icon {
-    fill: map-get($colors, 'white');
+    fill: map-get($colors, 'accent');
   }
 }
 .btn-left:hover {
   .svg-icon {
     @extend %transition;
-    fill: map-get($colors, 'accent');
+    fill: map-get($colors, 'white');
   }
 }
 .btn-right {
   position: absolute;
-  top: 305px;
-  right: 30px;
+  top: 279px;
+  right: 31px;
+
   @extend %transition;
   .svg-icon {
-    fill: map-get($colors, 'white');
+    fill: map-get($colors, 'accent');
   }
 }
 .btn-right:hover {
   .svg-icon {
     @extend %transition;
-    fill: map-get($colors, 'accent');
+    fill: map-get($colors, 'white');
   }
 }

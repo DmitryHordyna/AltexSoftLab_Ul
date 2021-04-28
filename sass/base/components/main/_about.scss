@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   .about-title {
-    margin-bottom: 15px;
+    margin-bottom: 23px;
+    font-size: 25px;
+    line-height: 1.21;
+    letter-spacing: 0.05em;
   }
   .about-img {
     display: flex;
@@ -21,7 +24,6 @@
     outline: 1px solid map-get($colors, 'black');
   }
   .about-text {
-    margin-bottom: 15px;
     flex-grow: 1;
   }
 }

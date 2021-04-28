@@ -12,12 +12,11 @@
     }
     .text {
       color: map-get($colors, 'footerText');
-      margin-bottom: 4px;
     }
     .link {
       display: flex;
       justify-content: flex-end;
-      margin-top: 5px;
+
       color: map-get($colors, 'accent');
       cursor: pointer;
       @extend %transition;

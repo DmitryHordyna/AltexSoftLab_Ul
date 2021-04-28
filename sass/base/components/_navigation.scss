@@ -5,12 +5,11 @@
   display: flex;
   align-items: center;
 
-  max-width: 950px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 15px;
-  background-color: white;
-
-  border-bottom: 1px solid map-get($colors, 'accent');
+  padding: 0 20px;
+  background-color: map-get($colors, 'white');
+  border-bottom: 2px solid map-get($colors, 'accent');
 }
 .site-nav {
   display: flex;
@@ -23,9 +22,17 @@
   }
 
   .site-nav__link {
+    padding: 40px 23px 27px;
+
+    font-size: 15px;
+    line-height: 1.31;
+    letter-spacing: 0.057em;
+    color: map-get($colors, 'secondText');
+
     @extend %transition;
-    padding: 22px 10px 20px;
-    color: map-get($colors, 'black');
+  }
+  .li_gallery {
+    padding-right: 12px;
   }
 
   .site-nav__item:hover,
@@ -37,13 +44,16 @@
   }
 }
 
-.logo-span {
-  text-transform: uppercase;
-  font-size: 28px;
-
-  line-height: 1.5;
-}
 .logo {
-  color: map-get($colors, 'black');
+  color: map-get($colors, 'firstText');
   font-family: 'Montserrat', sans-serif;
+  .logo-span {
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 0.1;
+  }
+  .logo-span-e {
+    font-size: 10px;
+    letter-spacing: 0.07em;
+  }
 }

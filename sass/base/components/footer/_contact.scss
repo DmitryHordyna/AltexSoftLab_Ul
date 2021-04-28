@@ -1,15 +1,8 @@
-.contact-title {
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-
-  border-bottom: 1px solid map-get($colors, 'gray');
-  color: map-get($colors, 'white');
-}
 .contact-list {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 
   .item:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .link {
     color: map-get($colors, 'footerText');
@@ -21,7 +14,7 @@
 }
 .tel-footer {
   display: grid;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   .link {
     color: map-get($colors, 'footerText');
   }
@@ -39,16 +32,16 @@
       text-decoration: underline;
     }
   }
-  .link:not(:last-child) {
-    margin-bottom: 3px;
-  }
+
   .span {
     color: map-get($colors, 'accent');
   }
 }
 .time-list {
   .title {
-    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.07em;
     color: map-get($colors, 'footerText');
   }
   .text {
