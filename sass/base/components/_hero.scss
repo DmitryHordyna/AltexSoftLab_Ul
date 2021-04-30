@@ -35,6 +35,8 @@
     font-size: 19px;
     letter-spacing: 0.07em;
 
+    color: map-get($colors, 'gray');
+
     @media screen and (min-width: 768px) {
       margin: 0 auto 40px;
       padding: 0 75px;
@@ -61,8 +63,6 @@
   }
 
   .hero-box_title {
-    height: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,11 +76,12 @@
     letter-spacing: 0.07em;
 
     @media screen and (max-width: 479px) {
+      height: 20px;
       font-size: 18px;
     }
 
     @media screen and (min-width: 480px) {
-      font-size: 24px;
+      font-size: 19px;
       height: 40px;
     }
   }
@@ -95,7 +96,7 @@
     @media screen and (min-width: 480px) {
       height: 68px;
       font-size: 12px;
-      padding: 15px;
+      padding: 10px;
     }
   }
 }
@@ -131,35 +132,52 @@
 }
 
 .btn-left {
+  display: flex;
+  cursor: pointer;
   position: absolute;
   top: 279px;
   left: 31px;
-
+  width: 50px;
+  height: 50px;
+  background-color: map-get($colors, 'black');
+  border-radius: 50%;
   @extend %transition;
 
   .svg-icon {
+    @extend %transition;
     fill: map-get($colors, 'accent');
   }
 }
 .btn-left:hover {
+  @extend %transition;
+  background-color: map-get($colors, 'accent');
   .svg-icon {
     @extend %transition;
-    fill: map-get($colors, 'white');
+    fill: map-get($colors, 'black');
   }
 }
 .btn-right {
+  display: flex;
+  cursor: pointer;
   position: absolute;
   top: 279px;
   right: 31px;
-
+  color: red;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
   @extend %transition;
   .svg-icon {
+    @extend %transition;
     fill: map-get($colors, 'accent');
   }
 }
 .btn-right:hover {
+  @extend %transition;
+  background-color: map-get($colors, 'accent');
   .svg-icon {
     @extend %transition;
-    fill: map-get($colors, 'white');
+    fill: map-get($colors, 'black');
   }
 }

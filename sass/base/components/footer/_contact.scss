@@ -17,7 +17,11 @@
   margin-bottom: 15px;
   .link {
     color: map-get($colors, 'footerText');
+    .span1 {
+      color: map-get($colors, 'secondText');
+    }
   }
+
   .link:hover,
   .link:focus {
     color: map-get($colors, 'footerText');
@@ -45,7 +49,7 @@
     color: map-get($colors, 'footerText');
   }
   .text {
-    color: map-get($colors, 'footerText');
+    color: map-get($colors, 'secondText');
   }
   .text:not(:last-child) {
     margin-bottom: 3px;

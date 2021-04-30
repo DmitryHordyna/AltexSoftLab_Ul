@@ -9,12 +9,12 @@
     border-radius: 4px;
     outline: none;
 
-    color: map-get($colors, 'white');
     background-color: map-get($colors, 'backForm');
     cursor: pointer;
   }
   .input::placeholder {
-    color: map-get($colors, 'white');
+    font-size: 13px;
+    color: map-get($colors, 'secondText');
   }
 
   .input:not(:placeholder-shown) {
@@ -35,8 +35,8 @@
     background-color: map-get($colors, 'backForm');
   }
   .texteria::placeholder {
-    font-size: 15px;
-    color: map-get($colors, 'white');
+    font-size: 13px;
+    color: map-get($colors, 'secondText');
   }
   .texteria:not(:placeholder-shown) {
     border-color: map-get($colors, 'accent');

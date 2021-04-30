@@ -9,9 +9,12 @@
     .services_item {
       display: flex;
       margin-bottom: 20px;
+
+      color: map-get($colors, 'secondText');
     }
     .services_title_secong {
       margin-bottom: 5px;
+      color: map-get($colors, 'gray');
     }
   }
   .link:hover,

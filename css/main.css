@@ -354,7 +354,7 @@ template {
 }
 
 .site-nav .site-nav__link, .site-nav .li_gallery, .site-nav .site-nav__item:hover,
-.site-nav .site-nav__item:focus, .menu-button, .btn-left, .btn-left:hover .svg-icon, .btn-right, .btn-right:hover .svg-icon, .social-list .link, .icon-box, .icon-box .svg-icon, .social-list .link:hover,
+.site-nav .site-nav__item:focus, .menu-button, .btn-left, .btn-left .svg-icon, .btn-left:hover, .btn-left:hover .svg-icon, .btn-right, .btn-right .svg-icon, .btn-right:hover, .btn-right:hover .svg-icon, .social-list .link, .icon-box, .icon-box .svg-icon, .social-list .link:hover,
 .social-list .link:focus, .social-list .link:hover .icon-box,
 .social-list .link:focus .icon-box, .social-list .link:hover .icon-box .svg-icon,
 .social-list .link:focus .icon-box .svg-icon, .blog-list .item .link, .blog-list .item .link:hover,
@@ -378,10 +378,14 @@ html {
 
 body {
   background-color: #2d2d2d;
-  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 ul {
+  list-style: none;
+}
+
+ol {
   list-style: none;
 }
 
@@ -409,6 +413,7 @@ svg {
 }
 
 .title {
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -582,11 +587,8 @@ svg {
   font-size: revert;
 }
 
-.header {
-  border-top: 5px solid #a7c353;
-}
-
 .main-nav {
+  border-top: 5px solid #a7c353;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,7 +642,7 @@ svg {
   font-size: 15px;
   line-height: 1.31;
   letter-spacing: 0.057em;
-  color: black;
+  color: gray;
 }
 
 .site-nav .li_gallery {
@@ -659,7 +661,7 @@ svg {
 
 .logo {
   color: #434343;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 .logo .logo-span {
@@ -693,6 +695,7 @@ svg {
 @media screen and (max-width: 1199px) {
   .logo .logo-span-e {
     font-size: 11px;
+    color: gray;
   }
 }
 
@@ -813,6 +816,7 @@ svg {
   font-style: italic;
   font-size: 19px;
   letter-spacing: 0.07em;
+  color: gray;
 }
 
 @media screen and (min-width: 768px) {
@@ -850,7 +854,6 @@ svg {
 }
 
 .hero_box .hero-box_title {
-  height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,13 +872,14 @@ svg {
 
 @media screen and (max-width: 479px) {
   .hero_box .hero-box_title {
+    height: 20px;
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero_box .hero-box_title {
-    font-size: 24px;
+    font-size: 19px;
     height: 40px;
   }
 }
@@ -891,7 +895,7 @@ svg {
   .hero_box .hero-box_description {
     height: 68px;
     font-size: 12px;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -938,31 +942,56 @@ svg {
 }
 
 .btn-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
   position: absolute;
   top: 279px;
   left: 31px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .btn-left .svg-icon {
   fill: #a7c353;
 }
 
+.btn-left:hover {
+  background-color: #a7c353;
+}
+
 .btn-left:hover .svg-icon {
-  fill: white;
+  fill: black;
 }
 
 .btn-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
   position: absolute;
   top: 279px;
   right: 31px;
+  color: red;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .btn-right .svg-icon {
   fill: #a7c353;
 }
 
+.btn-right:hover {
+  background-color: #a7c353;
+}
+
 .btn-right:hover .svg-icon {
-  fill: white;
+  fill: black;
 }
 
 .about {
@@ -1010,6 +1039,7 @@ svg {
 }
 
 .about .about-text {
+  color: #878787;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1052,10 +1082,12 @@ svg {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  color: #878787;
 }
 
 .services .services_list .services_title_secong {
   margin-bottom: 5px;
+  color: gray;
 }
 
 .services .link:hover,
@@ -1085,26 +1117,38 @@ svg {
   color: white;
 }
 
+.review {
+  padding-top: 10px;
+}
+
 .review .review_name {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  color: gray;
 }
 
-.review .review_name::before {
-  content: '';
-  width: 79px;
-  height: 59px;
+.review .review_item {
+  background-image: url(../../../../img/svg/quote-svgrepo-com.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("./../img/svg/quote-svgrepo-com.svg");
+  background-position: 1% 1%;
+  background-size: contain;
 }
 
 .review .item:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.review .text {
+  color: #878787;
 }
 
 .review .link-more {
@@ -1121,6 +1165,7 @@ svg {
 }
 
 .review-span {
+  color: #878787;
   font-weight: normal;
 }
 
@@ -1149,6 +1194,10 @@ svg {
 
 .tel-footer .link {
   color: #d3cccc;
+}
+
+.tel-footer .link .span1 {
+  color: #878787;
 }
 
 .tel-footer .link:hover,
@@ -1180,7 +1229,7 @@ svg {
 }
 
 .time-list .text {
-  color: #d3cccc;
+  color: #878787;
 }
 
 .time-list .text:not(:last-child) {
@@ -1254,7 +1303,7 @@ svg {
 }
 
 .blog-list .item .text {
-  color: #d3cccc;
+  color: #878787;
 }
 
 .blog-list .item .link {
@@ -1289,25 +1338,28 @@ svg {
   border: 1px solid rgba(88, 88, 92, 0.692);
   border-radius: 4px;
   outline: none;
-  color: white;
   background-color: rgba(88, 88, 92, 0.692);
   cursor: pointer;
 }
 
 .form .input::-webkit-input-placeholder {
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .input:-ms-input-placeholder {
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .input::-ms-input-placeholder {
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .input::placeholder {
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .input:not(:placeholder-shown) {
@@ -1329,23 +1381,23 @@ svg {
 }
 
 .form .texteria::-webkit-input-placeholder {
-  font-size: 15px;
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .texteria:-ms-input-placeholder {
-  font-size: 15px;
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .texteria::-ms-input-placeholder {
-  font-size: 15px;
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .texteria::placeholder {
-  font-size: 15px;
-  color: white;
+  font-size: 13px;
+  color: #878787;
 }
 
 .form .texteria:not(:placeholder-shown) {
@@ -1390,6 +1442,6 @@ svg {
 }
 
 .down .text {
-  color: #d3cccc;
+  color: #878787;
 }
 /*# sourceMappingURL=main.css.map */

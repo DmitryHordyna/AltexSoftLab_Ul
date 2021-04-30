@@ -1,21 +1,25 @@
 .review {
+  padding-top: 10px;
   .review_name {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    color: map-get($colors, 'gray');
   }
-  .review_name::before {
-    content: '';
-    width: 79px;
-    height: 59px;
+  .review_item {
+    background-image: url(../../../../img/svg/quote-svgrepo-com.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./../img/svg/quote-svgrepo-com.svg');
+    background-position: 1% 1%;
+    background-size: contain;
   }
-
   .item:not(:last-child) {
     margin-bottom: 5px;
   }
-
+  .text {
+    color: map-get($colors, 'secondText');
+  }
   .link-more {
     margin-top: 5px;
   }
@@ -29,5 +33,6 @@
 }
 
 .review-span {
+  color: map-get($colors, 'secondText');
   font-weight: normal;
 }

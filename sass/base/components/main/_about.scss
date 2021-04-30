@@ -27,6 +27,7 @@
     }
   }
   .about-text {
+    color: map-get($colors, 'secondText');
     flex-grow: 1;
   }
 }

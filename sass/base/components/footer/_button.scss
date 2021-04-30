@@ -5,6 +5,6 @@
   display: flex;
   justify-content: space-between;
   .text {
-    color: map-get($colors, 'footerText');
+    color: map-get($colors, 'secondText');
   }
 }

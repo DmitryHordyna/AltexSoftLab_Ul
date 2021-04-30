@@ -1,7 +1,5 @@
-.header {
-  border-top: 5px solid map-get($colors, 'accent');
-}
 .main-nav {
+  border-top: 5px solid map-get($colors, 'accent');
   display: flex;
 
   align-items: center;
@@ -36,7 +34,7 @@
     font-size: 15px;
     line-height: 1.31;
     letter-spacing: 0.057em;
-    color: map-get($colors, 'black');
+    color: map-get($colors, 'gray');
 
     @extend %transition;
   }
@@ -58,7 +56,7 @@
 
 .logo {
   color: map-get($colors, 'firstText');
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merriweather', serif;
   .logo-span {
     text-transform: uppercase;
     @media screen and (min-width: 1200px) {
@@ -77,6 +75,7 @@
     }
     @media screen and (max-width: 1199px) {
       font-size: 11px;
+      color: map-get($colors, 'gray');
     }
 
     letter-spacing: 0.01em;
