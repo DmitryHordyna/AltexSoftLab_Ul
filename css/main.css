@@ -905,7 +905,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #878787;
 }
 
 @media screen and (max-width: 479px) {
