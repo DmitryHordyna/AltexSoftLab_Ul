@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 
-    max-width: 920px;
+    max-width: 1200px;
     height: 250px;
     margin: 0 auto;
 
@@ -21,6 +21,13 @@
 
     @media screen and (min-width: 480px) {
       height: 350px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      @media screen and (min-width: 480px) {
+        height: 350px;
+      }
     }
   }
   .hero-title {
@@ -116,68 +123,77 @@
   border-bottom: 1px solid map-get($colors, 'secondText');
 
   .hero-button {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 4px;
-  }
-  .hero-button:not(:last-child) {
+    border: 5px;
     margin-right: 5px;
   }
+
   .hero-button:hover,
   .hero-button:focus {
-    border: 4px solid map-get($colors, 'accent');
+    border: 5px solid map-get($colors, 'accent');
     background-color: map-get($colors, 'white');
   }
 }
-
+.actives {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px;
+  border-color: red;
+  border: 5px solid map-get($colors, 'accent');
+  background-color: map-get($colors, 'white');
+}
 .btn-left {
-  display: flex;
-  cursor: pointer;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  font-size: 33px;
+  color: map-get($colors, 'accent');
   top: 279px;
   left: 31px;
   width: 50px;
   height: 50px;
-  background-color: map-get($colors, 'black');
-  border-radius: 50%;
-  @extend %transition;
 
-  .svg-icon {
-    @extend %transition;
-    fill: map-get($colors, 'accent');
-  }
+  background-color: black;
+  border: 5px solid map-get($colors, 'accent');
+  border-radius: 50%;
+
+  cursor: pointer;
+  @extend %transition;
 }
 .btn-left:hover {
   @extend %transition;
   background-color: map-get($colors, 'accent');
-  .svg-icon {
-    @extend %transition;
-    fill: map-get($colors, 'black');
-  }
+  color: map-get($colors, 'white');
+  border-color: map-get($colors, 'white');
 }
 .btn-right {
-  display: flex;
-  cursor: pointer;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  font-size: 33px;
+  color: map-get($colors, 'accent');
   top: 279px;
   right: 31px;
-  color: red;
   width: 50px;
   height: 50px;
   background-color: black;
+  border: 5px solid map-get($colors, 'accent');
   border-radius: 50%;
+
+  cursor: pointer;
   @extend %transition;
-  .svg-icon {
-    @extend %transition;
-    fill: map-get($colors, 'accent');
-  }
 }
 .btn-right:hover {
   @extend %transition;
   background-color: map-get($colors, 'accent');
-  .svg-icon {
-    @extend %transition;
-    fill: map-get($colors, 'black');
-  }
+  color: map-get($colors, 'white');
+  border-color: map-get($colors, 'white');
 }

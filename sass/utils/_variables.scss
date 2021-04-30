@@ -97,7 +97,7 @@ svg {
 .button {
   color: map-get($colors, 'black');
   background-color: map-get($colors, 'accent');
-  border-radius: 4px;
+  border-radius: 5px;
   // @extend %transition;
   cursor: pointer;
   border: none;

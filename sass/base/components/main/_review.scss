@@ -9,10 +9,12 @@
     color: map-get($colors, 'gray');
   }
   .review_item {
-    background-image: url(../../../../img/svg/quote-svgrepo-com.svg);
-    background-repeat: no-repeat;
-    background-position: 1% 1%;
-    background-size: contain;
+    @media screen and (min-width: 768px) {
+      background-image: url(../../../../img/svg/quote-svgrepo-com.svg);
+      background-repeat: no-repeat;
+      background-position: 1% 1%;
+      background-size: contain;
+    }
   }
   .item:not(:last-child) {
     margin-bottom: 5px;
