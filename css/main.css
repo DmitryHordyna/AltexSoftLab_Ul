@@ -437,7 +437,7 @@ svg {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px 15px 0;
   background-color: white;
@@ -573,7 +573,7 @@ svg {
 }
 
 .footer {
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 35px 20px 10px;
   background-color: #2d2d2d;
 }
@@ -593,7 +593,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   background-color: white;
@@ -833,8 +833,19 @@ svg {
   .hero_box {
     position: absolute;
     bottom: 100px;
-    right: 82px;
     width: 351px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero_box {
+    right: 82px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero_box {
+    right: 175px;
   }
 }
 
@@ -1089,7 +1100,7 @@ svg {
   height: 59px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../../img/svg/quote-svgrepo-com.svg");
+  background-image: url("./../img/svg/quote-svgrepo-com.svg");
 }
 
 .review .item:not(:last-child) {

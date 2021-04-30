@@ -50,8 +50,14 @@
   @media screen and (min-width: 480px) {
     position: absolute;
     bottom: 100px;
-    right: 82px;
+
     width: 351px;
+  }
+  @media screen and (max-width: 767px) {
+    right: 82px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 175px;
   }
 
   .hero-box_title {
@@ -78,6 +84,7 @@
       height: 40px;
     }
   }
+
   .hero-box_description {
     background-color: map-get($colors, 'white');
 
