@@ -787,7 +787,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1200px;
+  max-width: 920px;
   height: 250px;
   margin: 0 auto;
   background-color: #706b6b;
@@ -971,10 +971,10 @@ svg {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-size: 33px;
+  font-size: 40px;
   color: #a7c353;
   top: 279px;
-  left: 31px;
+  left: 150px;
   width: 50px;
   height: 50px;
   background-color: black;
@@ -1000,10 +1000,10 @@ svg {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-size: 33px;
+  font-size: 40px;
   color: #a7c353;
   top: 279px;
-  right: 31px;
+  right: 150px;
   width: 50px;
   height: 50px;
   background-color: black;
