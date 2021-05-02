@@ -983,6 +983,12 @@ svg {
   cursor: pointer;
 }
 
+@media screen and (max-width: 478px) {
+  .btn-left {
+    display: none;
+  }
+}
+
 .btn-left:hover {
   background-color: #a7c353;
   color: white;
@@ -1010,6 +1016,12 @@ svg {
   border: 5px solid #a7c353;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 478px) {
+  .btn-right {
+    display: none;
+  }
 }
 
 .btn-right:hover {

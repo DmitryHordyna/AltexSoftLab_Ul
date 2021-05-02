@@ -147,6 +147,9 @@
   background-color: map-get($colors, 'white');
 }
 .btn-left {
+  @media screen and(max-width:478px) {
+    display: none;
+  }
   position: absolute;
   display: flex;
   justify-content: center;
@@ -166,6 +169,7 @@
   cursor: pointer;
   @extend %transition;
 }
+
 .btn-left:hover {
   @extend %transition;
   background-color: map-get($colors, 'accent');
@@ -173,6 +177,9 @@
   border-color: map-get($colors, 'white');
 }
 .btn-right {
+  @media screen and(max-width:478px) {
+    display: none;
+  }
   position: absolute;
   display: flex;
   justify-content: center;
