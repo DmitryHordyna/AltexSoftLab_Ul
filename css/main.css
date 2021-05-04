@@ -354,7 +354,7 @@ template {
 }
 
 .site-nav .site-nav__link, .site-nav .li_gallery, .site-nav .site-nav__item:hover,
-.site-nav .site-nav__item:focus, .menu-button, .btn-left, .btn-left:hover, .btn-right, .btn-right:hover, .social-list .link, .icon-box, .icon-box .svg-icon, .social-list .link:hover,
+.site-nav .site-nav__item:focus, .menu-button, .btn-absolute, .btn-absolute:hover, .social-list .link, .icon-box, .icon-box .svg-icon, .social-list .link:hover,
 .social-list .link:focus, .social-list .link:hover .icon-box,
 .social-list .link:focus .icon-box, .social-list .link:hover .icon-box .svg-icon,
 .social-list .link:focus .icon-box .svg-icon, .blog-list .item .link, .blog-list .item .link:hover,
@@ -960,7 +960,7 @@ svg {
   background-color: white;
 }
 
-.btn-left {
+.btn-absolute {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,66 +968,34 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  font-size: 40px;
-  color: #a7c353;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
   top: 279px;
-  left: 150px;
   width: 50px;
   height: 50px;
-  background-color: black;
   border: 5px solid #a7c353;
   border-radius: 50%;
   cursor: pointer;
 }
 
 @media screen and (max-width: 478px) {
-  .btn-left {
+  .btn-absolute {
     display: none;
   }
 }
 
-.btn-left:hover {
-  background-color: #a7c353;
-  color: white;
-  border-color: white;
+.btn-absolute:hover {
+  background-color: white;
 }
 
 .btn-right {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  font-size: 40px;
-  color: #a7c353;
-  top: 279px;
   right: 150px;
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  border: 5px solid #a7c353;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
-@media screen and (max-width: 478px) {
-  .btn-right {
-    display: none;
-  }
-}
-
-.btn-right:hover {
-  background-color: #a7c353;
-  color: white;
-  border-color: white;
+.btn-left {
+  left: 150px;
 }
 
 .about {

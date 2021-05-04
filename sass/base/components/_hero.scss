@@ -146,61 +146,34 @@
   border: 5px solid map-get($colors, 'accent');
   background-color: map-get($colors, 'white');
 }
-.btn-left {
+
+.btn-absolute {
   @media screen and(max-width:478px) {
     display: none;
   }
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  background-color: black;
 
-  font-size: 40px;
-  color: map-get($colors, 'accent');
   top: 279px;
-  left: 150px;
   width: 50px;
   height: 50px;
 
-  background-color: black;
   border: 5px solid map-get($colors, 'accent');
   border-radius: 50%;
 
   cursor: pointer;
   @extend %transition;
 }
-
-.btn-left:hover {
+.btn-absolute:hover {
   @extend %transition;
-  background-color: map-get($colors, 'accent');
-  color: map-get($colors, 'white');
-  border-color: map-get($colors, 'white');
+  background-color: map-get($colors, 'white');
 }
 .btn-right {
-  @media screen and(max-width:478px) {
-    display: none;
-  }
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-
-  font-size: 40px;
-  color: map-get($colors, 'accent');
-  top: 279px;
   right: 150px;
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  border: 5px solid map-get($colors, 'accent');
-  border-radius: 50%;
-
-  cursor: pointer;
-  @extend %transition;
 }
-.btn-right:hover {
-  @extend %transition;
-  background-color: map-get($colors, 'accent');
-  color: map-get($colors, 'white');
-  border-color: map-get($colors, 'white');
+.btn-left {
+  left: 150px;
 }
