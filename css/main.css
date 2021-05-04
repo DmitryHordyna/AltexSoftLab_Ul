@@ -448,6 +448,24 @@ svg {
   background-color: white;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .card-set {
     margin: 0 auto;
