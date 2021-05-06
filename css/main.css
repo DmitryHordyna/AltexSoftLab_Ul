@@ -627,8 +627,19 @@ svg {
 }
 
 .site-nav {
-  height: 95px;
   display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .site-nav {
+    height: 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    height: 95px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -651,7 +662,7 @@ svg {
 
 @media screen and (max-width: 1199px) {
   .site-nav .site-nav__item {
-    padding: 20px 15px;
+    padding: 30px 15px;
   }
 }
 
@@ -682,22 +693,52 @@ svg {
 
 .logo .big-l {
   line-height: 1;
-  font-size: 32px;
   color: #666666;
 }
 
-.logo .small-l {
-  font-size: 26px;
+@media screen and (max-width: 1199px) {
+  .logo .big-l {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo .big-l {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .logo .small-l {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo .small-l {
+    font-size: 26px;
+  }
 }
 
 .logo .under-text {
-  font-size: 12px;
   color: #878787;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo .under-text {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo .under-text {
+    font-size: 12px;
+  }
 }
 
 .mobile-menu-list {
   position: absolute;
-  top: 41px;
+  top: 38px;
   left: 0;
   width: 100%;
   z-index: 1;
@@ -849,7 +890,13 @@ svg {
   color: gray;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
+  .hero .hero-title .title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero .hero-title .title {
     width: 760px;
     font-size: 22px;
