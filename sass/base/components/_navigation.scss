@@ -27,7 +27,7 @@
       padding: 20px 15px;
     }
     @media screen and (min-width: 1200px) {
-      padding: 50px 19px 30px;
+      padding: 50px 20px 30px;
     }
   }
 
@@ -52,29 +52,6 @@
   }
 }
 
-// .logo {
-//   color: map-get($colors, 'firstText');
-//   font-size: 32px;
-//   .logo-span {
-//     text-transform: uppercase;
-//     @media screen and (min-width: 1200px) {
-//       font-size: 22px;
-//     }
-//     @media screen and (max-width: 1199px) {
-//     }
-//   }
-//   .logo-span-e {
-//     @media screen and (min-width: 1200px) {
-//       font-size: 22px;
-//     }
-//     @media screen and (max-width: 1199px) {
-//       color: map-get($colors, 'gray');
-//     }
-
-//     letter-spacing: 0.01em;
-//   }
-// }
-
 .logo {
   .big-l {
     line-height: 1;
@@ -90,20 +67,6 @@
     color: map-get($colors, 'secondText');
   }
 }
-
-// .mobile-menu-btn {
-//   display: none;
-//   width: 35px;
-//   height: 35px;
-// }
-// @media screen and (max-width: 767px) {
-//   .mobile-menu-btn {
-//     display: block;
-//     margin-left: auto;
-//     width: 35px;
-//     height: 35px;
-//   }
-// }
 
 .mobile-menu-list {
   @media screen and (min-width: 768px) {
