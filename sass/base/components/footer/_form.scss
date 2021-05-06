@@ -14,8 +14,12 @@
     cursor: pointer;
   }
   .input::placeholder {
-    font-size: 13px;
+    font-size: 12px;
     color: map-get($colors, 'secondText');
+  }
+  .input:hover,
+  .input:focus {
+    border-color: map-get($colors, 'accent');
   }
 
   .input:not(:placeholder-shown) {
@@ -36,10 +40,13 @@
     background-color: map-get($colors, 'backForm');
   }
   .texteria::placeholder {
-    font-size: 13px;
     color: map-get($colors, 'secondText');
   }
   .texteria:not(:placeholder-shown) {
+    border-color: map-get($colors, 'accent');
+  }
+  .texteria:hover,
+  texteria:focus {
     border-color: map-get($colors, 'accent');
   }
   .button {
@@ -64,6 +71,6 @@
 .form-title {
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid map-get($colors, 'gray');
+  border-bottom: 1px solid map-get($colors, 'backForm');
   color: map-get($colors, 'white');
 }

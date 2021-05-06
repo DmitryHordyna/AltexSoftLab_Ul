@@ -1,21 +1,23 @@
 .social-title {
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid map-get($colors, 'gray');
+  border-bottom: 1px solid map-get($colors, 'backForm');
   color: map-get($colors, 'white');
 }
 .social-list {
   .item {
     flex-grow: 1;
-    border-bottom: 1px solid map-get($colors, 'gray');
+    border-bottom: 1px solid map-get($colors, 'backForm');
   }
   .item:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
   .link {
-    color: map-get($colors, 'accent');
     display: flex;
     align-items: center;
+
+    font-size: 12px;
+    color: map-get($colors, 'accent');
     @extend %transition;
   }
 }
@@ -30,15 +32,12 @@
     @extend %transition;
     fill: map-get($colors, 'white');
   }
-  // .svg-icon:hover {
-
-  //   fill: map-get($colors, 'accent');
-  // }
 }
 
 .social-list {
   .link:hover,
   .link:focus {
+    text-decoration: underline;
     color: map-get($colors, 'white');
     @extend %transition;
     & .icon-box {

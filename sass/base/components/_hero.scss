@@ -1,8 +1,22 @@
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 .hero {
   position: relative;
 
   @media screen and (min-width: 480px) {
-    padding-top: 48px;
+    padding-top: 40px;
   }
 
   .hero_img {
@@ -10,14 +24,12 @@
     justify-content: center;
     align-items: center;
 
+    margin: 0 auto;
     max-width: 920px;
     height: 250px;
-    margin: 0 auto;
 
     background-color: rgb(112, 107, 107);
     color: white;
-
-    font-size: 40px;
 
     @media screen and (min-width: 480px) {
       height: 350px;
@@ -31,26 +43,24 @@
     }
   }
   .hero-title {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto 40px;
+    .title {
+      margin: 0 auto;
+      text-align: center;
+      font-style: italic;
 
-    margin: 0 auto 20px;
+      color: map-get($colors, 'gray');
 
-    font-style: italic;
-    font-size: 19px;
-    letter-spacing: 0.07em;
-
-    color: map-get($colors, 'gray');
-
-    @media screen and (min-width: 768px) {
-      margin: 0 auto 40px;
-      padding: 0 75px;
-
-      font-size: 22px;
+      @media screen and (min-width: 768px) {
+        width: 760px;
+        font-size: 22px;
+      }
     }
   }
+  // display: flex;
+  // text-align: center;
+  // justify-content: center;
+  // align-items: center;
 }
 .hero_box {
   @media screen and (max-width: 479px) {
@@ -58,15 +68,15 @@
   }
   @media screen and (min-width: 480px) {
     position: absolute;
-    bottom: 100px;
+    bottom: 95px;
 
-    width: 351px;
+    width: 350px;
   }
   @media screen and (max-width: 767px) {
-    right: 82px;
+    right: 85px;
   }
   @media screen and (min-width: 768px) {
-    right: 175px;
+    right: 200px;
   }
 
   .hero-box_title {
@@ -79,16 +89,13 @@
     background-color: map-get($colors, 'accent');
     color: map-get($colors, 'white');
 
-    line-height: 1.31;
-    letter-spacing: 0.07em;
-
     @media screen and (max-width: 479px) {
       height: 20px;
       font-size: 18px;
     }
 
     @media screen and (min-width: 480px) {
-      font-size: 19px;
+      font-size: 20px;
       height: 40px;
     }
   }
@@ -96,14 +103,12 @@
   .hero-box_description {
     background-color: map-get($colors, 'white');
 
-    font-size: 12px;
-    line-height: 1.31;
-    letter-spacing: 0.08em;
-
     @media screen and (min-width: 480px) {
-      height: 68px;
-      font-size: 12px;
+      height: 70px;
+
       padding: 10px;
+
+      font-size: 12px;
     }
   }
 }
@@ -117,33 +122,33 @@
     padding-bottom: 5px;
   }
   @media screen and (min-width: 480px) {
-    padding: 20px 0 40px;
+    padding: 15px 0 40px;
   }
 
   border-bottom: 1px solid map-get($colors, 'secondText');
 
   .hero-button {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    border: 5px;
+
     margin-right: 5px;
   }
 
   .hero-button:hover,
   .hero-button:focus {
-    border: 5px solid map-get($colors, 'accent');
+    border: 4px solid map-get($colors, 'accent');
     background-color: map-get($colors, 'white');
   }
 }
 .actives {
   margin-right: 5px;
-  width: 20px;
-  height: 20px;
+
+  width: 15px;
+  height: 15px;
+
   border-radius: 50%;
-  border: 5px;
-  border-color: red;
-  border: 5px solid map-get($colors, 'accent');
+  border: 4px solid map-get($colors, 'accent');
   background-color: map-get($colors, 'white');
 }
 
@@ -157,11 +162,11 @@
   align-items: center;
   background-color: black;
 
-  top: 279px;
+  top: 280px;
   width: 50px;
   height: 50px;
 
-  border: 5px solid map-get($colors, 'accent');
+  border: 2px solid map-get($colors, 'accent');
   border-radius: 50%;
 
   cursor: pointer;
@@ -172,8 +177,18 @@
   background-color: map-get($colors, 'white');
 }
 .btn-right {
-  right: 150px;
+  @media screen and (max-width: 1199px) {
+    right: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 150px;
+  }
 }
 .btn-left {
-  left: 150px;
+  @media screen and (max-width: 1199px) {
+    left: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 150px;
+  }
 }

@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Clearcut</title>
+  <title>Clearcut</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
       <nav class="main-nav">
-        <a href="./" class="link logo"
-          ><span class="logo-span"
-            >Clearcut </span
-          ><br /> <span class="logo-span-e">Free PSD Website Template</span> </a
+       <div class="logo"> 
+         <a href="./" class="link big-l"
+          >C<span class="small-l"
+            >LEARCUT </span
+          ></a
         >
-
+        <p class="text under-text">Free PSD Website Template</p>
+</div>
         <ul class="list site-nav">
           
-          <li class="item site-nav__item">
-            <a href="./" class="link site-nav__link">HOME</a>
+          <li class="item site-nav__item is-active">
+            <a href="./" class="link  ">HOME</a>
           </li>
           <li class="item site-nav__item">
             <a href="./" class="link site-nav__link">STYLE DEMO</a>
@@ -72,11 +72,11 @@
 
     <main class="main">
       <section class="hero container">
-        <h1 class="title hero-title">
-          &#8220Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
-erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
-        </h1>
-        <div class="hero_img"><img  class="imgBig" src="./img/black.png" alt="description" width="100%" height="100%"></div>
+        <blockquote class="hero-title">
+    <p class="title">      &#8220Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
+erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;</p>
+        </blockquote>
+        <div class="hero_img"><img  class="imgBig" src="./img/940.jpg" alt="description" width="100%" height="100%"></div>
 
         <div class="hero_box">
           <h2 class="title hero-box_title">
@@ -107,9 +107,7 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
         <div class="card-set">
           <article class="section about">
             <h2 class="title about-title title-group">A Little About Us</h2>
-            <div class="img about-img">
-              <span class="about-span">270 x 140px</span>
-            </div>
+            <img class="img about-img" src="./img/270.jpg" alt="img 270X140px" />
             <p class="text about-text text-group">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
               laboriosam reprehenderit sunt autem atque ex ullam, reprehenderit
@@ -130,11 +128,8 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
             <h2 class="title services-title title-group">Some of Our Services</h2>
             <ul class="list services_list">
               <li class="item services_item">
-                <div class="services_img">
-                  64 <br />
-                  X <br />
-                  64px
-                </div>
+                <img class="services_img" src="./img/64.jpg" alt="img 64X64px"
+                />
                 <div class="sercices_describe">
                   <h3 class="title services_title_secong">Services Title</h3>
                   <p class="text text-group">
@@ -145,11 +140,8 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
               </li>
 
               <li class="item services_item">
-                <div class="services_img">
-                  64 <br />
-                  X <br />
-                  64px
-                </div>
+                <img class="services_img" src="./img/64.jpg" alt="img 64X64px"
+                />
                 <div class="sercices_describe">
                   <h3 class="title services_title_secong">Services Title</h3>
                   <p class="text text-group">
@@ -160,11 +152,8 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
               </li>
 
               <li class="item services_item">
-                <div class="services_img">
-                  64 <br />
-                  X <br />
-                  64px
-                </div>
+                <img class="services_img" src="./img/64.jpg" alt="img 64X64px"
+                />
                 <div class="sercices_describe">
                   <h3 class="title services_title_secong">Services Title</h3>
                   <p class="text text-group">
@@ -175,11 +164,8 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
               </li>
 
               <li class="item services_item">
-                <div class="services_img">
-                  64 <br />
-                  X <br />
-                  64px
-                </div>
+                <img class="services_img" src="./img/64.jpg" alt="img 64X64px"
+                />
                 <div class="sercices_describe">
                   <h3 class="title services_title_secong">Services Title</h3>
                   <p class="text text-group">
@@ -196,7 +182,7 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
           </article>
 
           <article class="section review">
-            <h2 class="title review-title ">What Our Clients Say</h2>
+            <h2 class="title review-title title-group">What Our Clients Say</h2>
             <ul class="list review_list">
               <li class="item review_item">
                 <h3 class="title review_name first-item">
@@ -318,7 +304,7 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
             <ul class="list blog-list">
               <li class="item">
                 <h4 class="title">Blog Post Title</h4>
-                <p class="text">Posted by Admin on 00.00.0000</p>
+                <p class="post">Posted by Admin on 00.00.0000</p>
                 <p class="text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   sunt aliquid ab quisquam magnam at inventore.
@@ -327,7 +313,7 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;
               </li>
               <li class="item">
                 <h4 class="title">Blog Post Title</h4>
-                <p class="text">Posted by Admin on 00.00.0000</p>
+                <p class=" post">Posted by Admin on 00.00.0000</p>
                 <p class="text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   sunt aliquid ab quisquam magnam at inventore.

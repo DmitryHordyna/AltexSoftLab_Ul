@@ -22,7 +22,7 @@ export default [
   },
   {
     id: 1,
-    img: './img/black.png',
+    img: './img/940.jpg',
     title: 'This Is A Very Long Slider Title',
     description:
       '  Me ipsum dolor. Minima a veritatis eum atque veritatis eum atque mollitia nisi quaerat animi!',

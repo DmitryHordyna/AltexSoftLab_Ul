@@ -1,22 +1,31 @@
 .blog-title {
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid map-get($colors, 'gray');
+  border-bottom: 1px solid map-get($colors, 'backForm');
   color: map-get($colors, 'white');
 }
 .blog-list {
   .item {
     .title {
-      color: map-get($colors, 'footerText');
-      margin-bottom: 4px;
+      font-weight: 700;
+      line-height: 1px;
+      color: map-get($colors, 'secondText');
     }
+
     .text {
+      font-size: 12px;
+      color: map-get($colors, 'secondText');
+    }
+    .post {
+      font-size: 11px;
+      margin-bottom: 5px;
       color: map-get($colors, 'secondText');
     }
     .link {
       display: flex;
       justify-content: flex-end;
 
+      font-size: 12px;
       color: map-get($colors, 'accent');
       cursor: pointer;
       @extend %transition;
@@ -31,6 +40,6 @@
     }
   }
   .item:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
 }
