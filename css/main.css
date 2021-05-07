@@ -1424,33 +1424,12 @@ svg {
   cursor: pointer;
 }
 
-.form .input::-webkit-input-placeholder {
-  font-size: 12px;
-  color: #878787;
-}
-
-.form .input:-ms-input-placeholder {
-  font-size: 12px;
-  color: #878787;
-}
-
-.form .input::-ms-input-placeholder {
-  font-size: 12px;
-  color: #878787;
-}
-
-.form .input::placeholder {
-  font-size: 12px;
-  color: #878787;
-}
-
-.form .input:hover,
-.form .input:focus {
+.form .input:not(:placeholder-shown):required:valid {
   border-color: #a7c353;
 }
 
-.form .input:not(:placeholder-shown) {
-  border-color: #a7c353;
+.form .input:not(:placeholder-shown):required:invalid {
+  border-color: red;
 }
 
 .form .texteria {
@@ -1467,29 +1446,12 @@ svg {
   background-color: #383838;
 }
 
-.form .texteria::-webkit-input-placeholder {
-  color: #878787;
-}
-
-.form .texteria:-ms-input-placeholder {
-  color: #878787;
-}
-
-.form .texteria::-ms-input-placeholder {
-  color: #878787;
-}
-
-.form .texteria::placeholder {
-  color: #878787;
-}
-
-.form .texteria:not(:placeholder-shown) {
+.form .texteria:not(:placeholder-shown):required:valid {
   border-color: #a7c353;
 }
 
-.form .texteria:hover,
-.form texteria:focus {
-  border-color: #a7c353;
+.form .texteria:not(:placeholder-shown):required:invalid {
+  border-color: red;
 }
 
 .form .button {

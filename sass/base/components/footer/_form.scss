@@ -13,18 +13,19 @@
     background-color: map-get($colors, 'backForm');
     cursor: pointer;
   }
-  .input::placeholder {
-    font-size: 12px;
-    color: map-get($colors, 'secondText');
-  }
-  .input:hover,
-  .input:focus {
+  // .input::placeholder {
+  //   font-size: 12px;
+  //   color: map-get($colors, 'secondText');
+  // }
+
+  .input:not(:placeholder-shown):required:valid {
     border-color: map-get($colors, 'accent');
   }
 
-  .input:not(:placeholder-shown) {
-    border-color: map-get($colors, 'accent');
+  .input:not(:placeholder-shown):required:invalid {
+    border-color: red;
   }
+
   .texteria {
     resize: none;
     width: 100%;
@@ -39,15 +40,12 @@
     color: map-get($colors, 'white');
     background-color: map-get($colors, 'backForm');
   }
-  .texteria::placeholder {
-    color: map-get($colors, 'secondText');
-  }
-  .texteria:not(:placeholder-shown) {
+  .texteria:not(:placeholder-shown):required:valid {
     border-color: map-get($colors, 'accent');
   }
-  .texteria:hover,
-  texteria:focus {
-    border-color: map-get($colors, 'accent');
+
+  .texteria:not(:placeholder-shown):required:invalid {
+    border-color: red;
   }
   .button {
     display: inline-flex;

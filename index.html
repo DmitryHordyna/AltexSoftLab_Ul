@@ -329,27 +329,27 @@ erat. In fringilla massa ut nisi ullamcorper pellentesque&#8222;</p>
               class="signup_form"
               name="signup_form"
               autocomplete="on"
-              novalidate
+              validate
             >
               <input
                 class="input"
-                type="name"
-                name=""
-                id=""
+               type="text" name="username" 
+             required minlength="3"
                 placeholder="Name"
               />
               <input
                 class="input"
-                type="email"
-                name=""
-                id=""
+            type="email" name="email"
+             required 
                 placeholder="Email"
               />
               <textarea
+             
                 class="texteria"
                 name="feedback"
                 rows="10"
                 placeholder="Message"
+                 required minlength="5"
               ></textarea>
               <button type="submit" class="button">SUBMIT</button>
             </form>
