@@ -469,19 +469,19 @@ svg {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1201px;
   }
 }
 
@@ -947,7 +947,7 @@ svg {
 @media screen and (max-width: 479px) {
   .hero_box .hero-box_title {
     height: 20px;
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -1432,6 +1432,10 @@ svg {
   border-color: red;
 }
 
+.form .input:focus {
+  border-color: #a7c353;
+}
+
 .form .texteria {
   resize: none;
   width: 100%;
@@ -1452,6 +1456,10 @@ svg {
 
 .form .texteria:not(:placeholder-shown):required:invalid {
   border-color: red;
+}
+
+.form .texteria:focus {
+  border-color: #a7c353;
 }
 
 .form .button {

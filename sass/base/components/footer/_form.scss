@@ -25,6 +25,9 @@
   .input:not(:placeholder-shown):required:invalid {
     border-color: red;
   }
+  .input:focus {
+    border-color: map-get($colors, 'accent');
+  }
 
   .texteria {
     resize: none;
@@ -46,6 +49,9 @@
 
   .texteria:not(:placeholder-shown):required:invalid {
     border-color: red;
+  }
+  .texteria:focus {
+    border-color: map-get($colors, 'accent');
   }
   .button {
     display: inline-flex;
